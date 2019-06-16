@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/good_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/good_checkBox"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_icon">
+
+        <TextView
+            android:id="@+id/good_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="商品名称"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/good_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/good_name"
+            android:layout_marginTop="23dp"
+            android:text="价格"
+            android:textColor="#ff00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/groupLayout"
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/good_name"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/good_price">
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:layout_centerVertical="true"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/btn_minus"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="1"
+                android:layout_centerVertical="true"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_centerVertical="true"
+                android:id="@+id/btn_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/tv_num"
+                android:text="+"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

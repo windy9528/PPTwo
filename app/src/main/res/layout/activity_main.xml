@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ExpandableListView
+        android:groupIndicator="@null"
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ExpandableListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FEE79A">
+
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/checkbox_all"
+            android:textColor="#FF000000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/total_price"
+            android:textColor="#FFFF0000"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/checkbox_all"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥0.0" />
+
+        <Button
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_go"
+            android:textColor="#FFFC6C9B"
+            android:textStyle="bold"
+            android:background="#FFFFFFFF"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去结算(0)" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
